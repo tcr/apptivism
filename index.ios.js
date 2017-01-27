@@ -17,7 +17,7 @@ import Communications from 'react-native-communications';
 
 import Main from './project';
 
-export default class AwesomeProject extends Component {
+export default class Apptivism extends Component {
   render() {
     return (
       <Main />
@@ -25,4 +25,4 @@ export default class AwesomeProject extends Component {
   }
 }
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('Apptivism', () => Apptivism);
