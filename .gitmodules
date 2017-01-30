@@ -1,0 +1,3 @@
+[submodule "feed"]
+	path = feed
+	url = http://github.com/tcr/apptivism-feed
