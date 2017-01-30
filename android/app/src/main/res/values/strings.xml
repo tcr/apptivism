@@ -1,3 +1,4 @@
 <resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">DW58-DrjeiFhlXB1ai1XsIUe7FIDEyM-ERPDG</string>
     <string name="app_name">Apptivism</string>
 </resources>

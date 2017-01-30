@@ -17,6 +17,7 @@ import {
 import Communications from 'react-native-communications';
 import Reps from './feed/representatives';
 import { StackNavigator } from 'react-navigation';
+import codePush from "react-native-code-push";
 
 Reps.sort((a, b) => {
   return a.statename < b.statename ? -1 : a.statename > b.statename ? 1 : 0;
@@ -155,7 +156,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flex: 0,
     backgroundColor: '#ffaaaa',
-    margin: 8,
+    marginVertical: 8,
+    marginHorizontal: 4,
   },
   cwText: {
     fontSize: 40,
@@ -198,11 +200,13 @@ const styles = StyleSheet.create({
 });
 
 
-export default StackNavigator({
+export default codePush({
+  updateDialog: true,
+})(StackNavigator({
   Home: {
     screen: HomeScreen,
   },
   Commonwealth: {
     screen: CommonwealthScreen,
   }
-});
+}));
